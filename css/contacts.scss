@@ -6,8 +6,8 @@ $navbar-text: #F3F3F4;
 $hero-bg: #14110F;
 $hero-title: #F3F3F4;
 $hero-subtitle: #F3F3F4;
-$info-text: #F3F3F4;
-$info-hyperlink: #F9B5A2;
+$links-text: #F3F3F4;
+$links-hyperlink: #F9B5A2;
 
 @keyframes popup {
     0% {
@@ -68,5 +68,28 @@ body {
         font-size: 1.5em;
         letter-spacing: .2em;
         color: $hero-subtitle;
+    }
+}
+
+.links {
+    animation: popup 1s;
+    color: $links-text;
+    text-align: center;
+
+    .list {
+        animation: popup 1s;
+        list-style-type: none;
+
+        .items {
+            animation: popup 1s;
+            font-size: 3em;
+            font-weight: 300;
+            padding: 2em;
+            text-align: center;
+
+            a {
+                text-align: center;
+            }
+        }
     }
 }

@@ -72,4 +72,30 @@ body {
   letter-spacing: .2em;
   color: #F3F3F4;
 }
+
+.links {
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
+  color: #F3F3F4;
+  text-align: center;
+}
+
+.links .list {
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
+  list-style-type: none;
+}
+
+.links .list .items {
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
+  font-size: 3em;
+  font-weight: 300;
+  padding: 2em;
+  text-align: center;
+}
+
+.links .list .items a {
+  text-align: center;
+}
 /*# sourceMappingURL=contacts.css.map */
