@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+:root {
+  --navbar-bg: grey;
+  --navbar-text: white;
+  --hero-bg: white;
+  --hero-title: black;
+  --hero-subtitle: #c6c6c6;
+  --info-bg: grey;
+  --info-text: white;
+  --info-hyperlink: blue;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbar-item {
+  float: left;
+  list-style-type: none;
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+.navbar .navbar-item a {
+  text-decoration: none;
+  color: var(--hero-bg);
+}
+
+.hero {
+  text-align: center;
+  background: var(--hero-bg);
+  color: var(--hero-title);
+  padding: 5em;
+}
+
+.hero .title {
+  font-weight: 500;
+  font-size: 5em;
+}
+
+.hero .subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+  color: var(--hero-subtitle);
+}
+
+.info {
+  text-align: center;
+  background: var(--info-bg);
+  color: var(--info-text);
+  padding: 2em;
+}
+
+.info .text {
+  font-size: 1.75em;
+}
+
+.info .text a {
+  color: var(--info-hyperlink);
+}
+/*# sourceMappingURL=index.css.map */
