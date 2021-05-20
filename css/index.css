@@ -78,8 +78,8 @@ body {
 }
 
 .info .text {
-  -webkit-animation: popup 1.5s;
-          animation: popup 1.5s;
+  -webkit-animation: popup .75s;
+          animation: popup .75s;
   font-size: 1.75em;
 }
 
