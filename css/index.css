@@ -21,12 +21,12 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
-  background: #F5853F;
+  background: #14110F;
 }
 
 .navbar {
-  background: #2D080A;
-  color: #FFCDBC;
+  background: #34312D;
+  color: #F3F3F4;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,13 +44,13 @@ body {
 
 .navbar .navbar-item a {
   text-decoration: none;
-  color: #FFCDBC;
+  color: #F3F3F4;
 }
 
 .hero {
   text-align: center;
-  background: #F5853F;
-  color: #130303;
+  background: #14110F;
+  color: #F3F3F4;
   padding: 3em;
 }
 
@@ -68,13 +68,12 @@ body {
   font-weight: 300;
   font-size: 1.5em;
   letter-spacing: .2em;
-  color: #FFCDBC;
+  color: #F3F3F4;
 }
 
 .info {
   text-align: center;
-  background: #2D080A;
-  color: #FFCDBC;
+  color: #F3F3F4;
 }
 
 .info .text {
@@ -85,7 +84,7 @@ body {
 }
 
 .info .text a {
-  color: #7C3626;
+  color: #D9C5B2;
   text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */

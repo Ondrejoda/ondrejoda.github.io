@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
 
-$navbar-bg: #2D080A;
-$navbar-text: #FFCDBC;
-$hero-bg: #F5853F;
-$hero-title: #130303;
-$hero-subtitle: #FFCDBC;
-$info-bg: #2D080A;
-$info-text: #FFCDBC;
-$info-hyperlink: #7C3626;
+$navbar-bg: #34312D;
+$navbar-text: #F3F3F4;
+$hero-bg: #14110F;
+$hero-title: #F3F3F4;
+$hero-subtitle: #F3F3F4;
+$info-text: #F3F3F4;
+$info-hyperlink: #D9C5B2;
 
 @keyframes popup {
     0% {
@@ -73,7 +72,6 @@ body {
 
 .info {
     text-align: center;
-    background: $info-bg;
     color: $info-text;
 
     .text {
