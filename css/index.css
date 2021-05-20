@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
-:root {
-  --navbar-bg: grey;
-  --navbar-text: white;
-  --hero-bg: white;
-  --hero-title: black;
-  --hero-subtitle: #c6c6c6;
-  --info-bg: grey;
-  --info-text: white;
-  --info-hyperlink: #a000e0;
+@-webkit-keyframes popup {
+  0% {
+    scale: 0%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+@keyframes popup {
+  0% {
+    scale: 0%;
+  }
+  100% {
+    scale: 100%;
+  }
 }
 
 body {
@@ -18,8 +24,8 @@ body {
 }
 
 .navbar {
-  background: var(--navbar-bg);
-  color: var(--navbar-text);
+  background: grey;
+  color: white;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,6 +33,8 @@ body {
 }
 
 .navbar .navbar-item {
+  -webkit-animation: popup .5s;
+          animation: popup .5s;
   float: left;
   list-style-type: none;
   margin-left: 1em;
@@ -35,41 +43,47 @@ body {
 
 .navbar .navbar-item a {
   text-decoration: none;
-  color: var(--navbar-text);
+  color: white;
 }
 
 .hero {
   text-align: center;
-  background: var(--hero-bg);
-  color: var(--hero-title);
+  background: white;
+  color: black;
   padding: 5em;
 }
 
 .hero .title {
+  -webkit-animation: popup .75s;
+          animation: popup .75s;
   font-weight: 500;
   font-size: 5em;
 }
 
 .hero .subtitle {
+  -webkit-animation: popup 1.5s;
+          animation: popup 1.5s;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.5em;
   letter-spacing: .2em;
-  color: var(--hero-subtitle);
+  color: #c6c6c6;
 }
 
 .info {
   text-align: center;
-  background: var(--info-bg);
-  color: var(--info-text);
+  background: grey;
+  color: white;
   padding: 2em;
 }
 
 .info .text {
+  -webkit-animation: popup 3s;
+          animation: popup 3s;
   font-size: 1.75em;
 }
 
 .info .text a {
-  color: var(--info-hyperlink);
+  color: #a000e0;
 }
 /*# sourceMappingURL=index.css.map */
