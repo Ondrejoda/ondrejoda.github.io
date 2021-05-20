@@ -28,6 +28,7 @@ body {
   background: #34312D;
   color: #F3F3F4;
   text-decoration: none;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +39,7 @@ body {
           animation: popup .5s;
   float: left;
   list-style-type: none;
-  margin-left: 4em;
+  margin: .25em 2em;
   font-size: 2em;
 }
 
@@ -52,13 +53,14 @@ body {
   background: #14110F;
   color: #F3F3F4;
   padding: 3em;
+  margin-bottom: 10em;
 }
 
 .hero .title {
   -webkit-animation: popup .75s;
           animation: popup .75s;
   font-weight: 500;
-  font-size: 5em;
+  font-size: 7em;
 }
 
 .hero .subtitle {
@@ -84,7 +86,7 @@ body {
 }
 
 .info .text a {
-  color: #D9C5B2;
+  color: #F9B5A2;
   text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
