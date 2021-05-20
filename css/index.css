@@ -74,16 +74,16 @@ body {
   text-align: center;
   background: grey;
   color: white;
-  padding: 2em;
 }
 
 .info .text {
   -webkit-animation: popup .75s;
           animation: popup .75s;
   font-size: 1.75em;
+  padding: 4em;
 }
 
 .info .text a {
-  color: #a000e0;
+  color: #ee88ee;
 }
 /*# sourceMappingURL=index.css.map */

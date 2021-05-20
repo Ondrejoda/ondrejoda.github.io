@@ -8,7 +8,7 @@ $hero-title: black;
 $hero-subtitle: #c6c6c6;
 $info-bg: grey;
 $info-text: white;
-$info-hyperlink: #a000e0;
+$info-hyperlink: #ee88ee;
 
 @keyframes popup {
     0% {
@@ -75,12 +75,11 @@ body {
     text-align: center;
     background: $info-bg;
     color: $info-text;
-    
-    padding: 2em;
 
     .text {
         animation: popup .75s;
         font-size: 1.75em;
+        padding: 4em;
 
         a {
             color: $info-hyperlink;
