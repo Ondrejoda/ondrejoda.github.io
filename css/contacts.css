@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+@-webkit-keyframes popup {
+  0% {
+    scale: 0%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+@keyframes popup {
+  0% {
+    scale: 0%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background: #14110F;
+}
+
+.navbar {
+  background: #34312D;
+  color: #F3F3F4;
+  text-decoration: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbar-item {
+  -webkit-animation: popup .5s;
+          animation: popup .5s;
+  float: left;
+  list-style-type: none;
+  margin: .25em 8em;
+  font-size: 2em;
+}
+
+.navbar .navbar-item a {
+  text-decoration: none;
+  color: #F3F3F4;
+}
+
+.hero {
+  text-align: center;
+  background: #14110F;
+  color: #F3F3F4;
+  padding: 3em;
+  margin-bottom: 10em;
+}
+
+.hero .title {
+  -webkit-animation: popup .75s;
+          animation: popup .75s;
+  font-weight: 500;
+  font-size: 7em;
+}
+
+.hero .subtitle {
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+  color: #F3F3F4;
+}
+/*# sourceMappingURL=contacts.css.map */

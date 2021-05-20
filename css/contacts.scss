@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+
+$navbar-bg: #34312D;
+$navbar-text: #F3F3F4;
+$hero-bg: #14110F;
+$hero-title: #F3F3F4;
+$hero-subtitle: #F3F3F4;
+$info-text: #F3F3F4;
+$info-hyperlink: #F9B5A2;
+
+@keyframes popup {
+    0% {
+        scale: 0%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background: $hero-bg;
+}
+
+.navbar {
+    background: $navbar-bg;
+    color: $navbar-text;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+
+    .navbar-item {
+        animation: popup .5s;
+        float: left;
+        list-style-type: none;
+        margin: .25em 8em;
+        font-size: 2em;
+        a {
+            text-decoration: none;
+            color: $navbar-text;
+        }
+    }
+
+}
+
+.hero {
+    text-align: center;
+    background: $hero-bg;
+    color: $hero-title;
+
+    padding: 3em;
+    margin-bottom: 10em;
+
+    .title {
+        animation: popup .75s;
+        font-weight: 500;
+        font-size: 7em;
+    }
+
+    .subtitle {
+        animation: popup 1s;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.5em;
+        letter-spacing: .2em;
+        color: $hero-subtitle;
+    }
+}
