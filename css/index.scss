@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
 
-$navbar-bg: grey;
-$navbar-text: white;
-$hero-bg: white;
-$hero-title: black;
-$hero-subtitle: #c6c6c6;
-$info-bg: grey;
-$info-text: white;
-$info-hyperlink: #ee88ee;
+$navbar-bg: #2D080A;
+$navbar-text: #FFCDBC;
+$hero-bg: #F5853F;
+$hero-title: #130303;
+$hero-subtitle: #FFCDBC;
+$info-bg: #2D080A;
+$info-text: #FFCDBC;
+$info-hyperlink: #7C3626;
 
 @keyframes popup {
     0% {
@@ -24,6 +24,7 @@ body {
     font-weight: 300;
     margin: 0;
     padding: 0;
+    background: $hero-bg;
 }
 
 .navbar {
@@ -51,13 +52,12 @@ body {
     background: $hero-bg;
     color: $hero-title;
 
-    padding: 5em;
+    padding: 3em;
 
     .title {
         animation: popup .75s;
         font-weight: 500;
         font-size: 5em;
-        // animation: popup 1s;
     }
 
     .subtitle {
@@ -83,6 +83,7 @@ body {
 
         a {
             color: $info-hyperlink;
+            text-decoration: none;
         }
     }
 }

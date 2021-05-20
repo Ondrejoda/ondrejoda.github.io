@@ -21,11 +21,12 @@ body {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  background: #F5853F;
 }
 
 .navbar {
-  background: grey;
-  color: white;
+  background: #2D080A;
+  color: #FFCDBC;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,14 +44,14 @@ body {
 
 .navbar .navbar-item a {
   text-decoration: none;
-  color: white;
+  color: #FFCDBC;
 }
 
 .hero {
   text-align: center;
-  background: white;
-  color: black;
-  padding: 5em;
+  background: #F5853F;
+  color: #130303;
+  padding: 3em;
 }
 
 .hero .title {
@@ -67,13 +68,13 @@ body {
   font-weight: 300;
   font-size: 1.5em;
   letter-spacing: .2em;
-  color: #c6c6c6;
+  color: #FFCDBC;
 }
 
 .info {
   text-align: center;
-  background: grey;
-  color: white;
+  background: #2D080A;
+  color: #FFCDBC;
 }
 
 .info .text {
@@ -84,6 +85,7 @@ body {
 }
 
 .info .text a {
-  color: #ee88ee;
+  color: #7C3626;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
