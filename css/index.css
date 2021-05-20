@@ -61,8 +61,8 @@ body {
 }
 
 .hero .subtitle {
-  -webkit-animation: popup 1.5s;
-          animation: popup 1.5s;
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.5em;
@@ -78,8 +78,8 @@ body {
 }
 
 .info .text {
-  -webkit-animation: popup 3s;
-          animation: popup 3s;
+  -webkit-animation: popup 1.5s;
+          animation: popup 1.5s;
   font-size: 1.75em;
 }
 
