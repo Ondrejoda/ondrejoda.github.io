@@ -6,8 +6,8 @@ $navbar-text: #F3F3F4;
 $hero-bg: #14110F;
 $hero-title: #F3F3F4;
 $hero-subtitle: #F3F3F4;
-$links-text: #F3F3F4;
-$links-hyperlink: #F9B5A2;
+$info-text: #F3F3F4;
+$info-hyperlink: #F9B5A2;
 
 @keyframes popup {
     0% {
@@ -24,7 +24,6 @@ body {
     margin: 0;
     padding: 0;
     background: $hero-bg;
-    text-align: center;
 }
 
 .navbar {
@@ -50,12 +49,12 @@ body {
 }
 
 .hero {
-    // text-align: center;
+    text-align: center;
     background: $hero-bg;
     color: $hero-title;
 
     padding: 3em;
-    // margin-bottom: 5em;
+    margin-bottom: 5em;
 
     .title {
         animation: popup .75s;
@@ -70,6 +69,54 @@ body {
         font-size: 1.5em;
         letter-spacing: .2em;
         color: $hero-subtitle;
+    }
+}
+
+.info {
+    text-align: center;
+    color: $info-text;
+
+    .text {
+        animation: popup .75s;
+        font-size: 2.5em;
+        padding: 4em;
+        letter-spacing: .05em;
+        line-height: 1.5em;
+
+        a {
+            color: $info-hyperlink;
+            text-decoration: none;
+        }
+    }
+}
+
+.projects {
+    color: $links-text;
+    margin-bottom: 1em;
+    display: grid;
+    grid-column-gap: 1em;
+    // text-align: center;
+
+    .section-title {
+        animation: popup 1s;
+        font-weight: 100;
+        font-size: 4em;
+    }
+
+    .list {
+        animation: popup 1s;
+        list-style-type: none;
+        .items {
+            animation: popup 1s;
+            font-size: 3em;
+            font-weight: 300;
+            margin-bottom: 2em;
+
+            a {
+                color: $links-hyperlink;
+                text-decoration: none;
+            }
+        }
     }
 }
 
