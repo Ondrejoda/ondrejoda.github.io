@@ -28,6 +28,7 @@ body {
   background: #34312D;
   color: #F3F3F4;
   text-decoration: none;
+  font-weight: 500;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +40,7 @@ body {
           animation: popup .5s;
   float: left;
   list-style-type: none;
-  margin: .25em 8em;
+  margin: .25em 7.994em;
   font-size: 2em;
 }
 
@@ -53,14 +54,14 @@ body {
   background: #14110F;
   color: #F3F3F4;
   padding: 3em;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 .hero .title {
   -webkit-animation: popup .75s;
           animation: popup .75s;
   font-weight: 500;
-  font-size: 7em;
+  font-size: 9em;
 }
 
 .hero .subtitle {
@@ -81,8 +82,10 @@ body {
 .info .text {
   -webkit-animation: popup .75s;
           animation: popup .75s;
-  font-size: 1.75em;
+  font-size: 2.5em;
   padding: 4em;
+  letter-spacing: .05em;
+  line-height: 1.5em;
 }
 
 .info .text a {
