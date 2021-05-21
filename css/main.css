@@ -22,7 +22,6 @@ body {
   margin: 0;
   padding: 0;
   background: #14110F;
-  text-align: center;
 }
 
 .navbar {
@@ -51,6 +50,7 @@ body {
 }
 
 .hero {
+  text-align: center;
   background: #14110F;
   color: #F3F3F4;
   padding: 3em;
@@ -74,28 +74,54 @@ body {
   color: #F3F3F4;
 }
 
-.projects {
+.info {
+  text-align: center;
   color: #F3F3F4;
+}
+
+.info .text {
+  -webkit-animation: popup .75s;
+          animation: popup .75s;
+  font-size: 2.5em;
+  padding: 4em;
+  letter-spacing: .05em;
+  line-height: 1.5em;
+}
+
+.info .text a {
+  color: #F9B5A2;
+  text-decoration: none;
+}
+
+.itch-io {
+  color: #F3F3F4;
+  background: #14110F;
   margin-bottom: 1em;
   display: -ms-grid;
   display: grid;
   grid-column-gap: 1em;
+  text-align: center;
 }
 
-.projects .section-title {
+.itch-io .section-title {
   -webkit-animation: popup 1s;
           animation: popup 1s;
   font-weight: 100;
   font-size: 4em;
 }
 
-.projects .list {
+.itch-io .list {
+  color: #F3F3F4;
+  margin-bottom: 1em;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 1em;
   -webkit-animation: popup 1s;
           animation: popup 1s;
   list-style-type: none;
 }
 
-.projects .list .items {
+.itch-io .list .items {
   -webkit-animation: popup 1s;
           animation: popup 1s;
   font-size: 3em;
@@ -103,8 +129,35 @@ body {
   margin-bottom: 2em;
 }
 
-.projects .list .items a {
+.itch-io .list .items a {
   color: #F9B5A2;
   text-decoration: none;
 }
-/*# sourceMappingURL=projects.css.map */
+
+.links {
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
+  color: #F3F3F4;
+  margin-bottom: 20em;
+  text-align: center;
+}
+
+.links .list {
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
+  list-style-type: none;
+}
+
+.links .list .items {
+  -webkit-animation: popup 1s;
+          animation: popup 1s;
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.links .list .items a {
+  color: #F9B5A2;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

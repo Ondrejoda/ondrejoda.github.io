@@ -6,8 +6,8 @@ $navbar-text: #F3F3F4;
 $hero-bg: #14110F;
 $hero-title: #F3F3F4;
 $hero-subtitle: #F3F3F4;
-$info-text: #F3F3F4;
-$info-hyperlink: #F9B5A2;
+$content-text: #F3F3F4;
+$content-hyperlink: #F9B5A2;
 
 @keyframes popup {
     0% {
@@ -74,7 +74,7 @@ body {
 
 .info {
     text-align: center;
-    color: $info-text;
+    color: $content-text;
 
     .text {
         animation: popup .75s;
@@ -84,19 +84,20 @@ body {
         line-height: 1.5em;
 
         a {
-            color: $info-hyperlink;
+            color: $content-hyperlink;
             text-decoration: none;
         }
     }
 }
 
-.projects {
-    color: $links-text;
+.itch-io {
+    color: $content-text;
+    background: $hero-bg;
     margin-bottom: 1em;
     display: grid;
     grid-column-gap: 1em;
-    // text-align: center;
-
+    text-align: center;
+    
     .section-title {
         animation: popup 1s;
         font-weight: 100;
@@ -104,6 +105,10 @@ body {
     }
 
     .list {
+        color: $content-text;
+        margin-bottom: 1em;
+        display: grid;
+        grid-column-gap: 1em;
         animation: popup 1s;
         list-style-type: none;
         .items {
@@ -111,9 +116,8 @@ body {
             font-size: 3em;
             font-weight: 300;
             margin-bottom: 2em;
-
             a {
-                color: $links-hyperlink;
+                color: $content-hyperlink;
                 text-decoration: none;
             }
         }
@@ -122,9 +126,9 @@ body {
 
 .links {
     animation: popup 1s;
-    color: $links-text;
+    color: $content-text;
     margin-bottom: 20em;
-    // text-align: center;
+    text-align: center;
 
     .list {
         animation: popup 1s;
@@ -136,7 +140,7 @@ body {
             margin-bottom: 1em;
 
             a {
-                color: $links-hyperlink;
+                color: $content-hyperlink;
                 text-decoration: none;
             }
         }
