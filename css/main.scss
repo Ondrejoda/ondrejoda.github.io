@@ -18,16 +18,18 @@ $content-hyperlink: #F9B5A2;
     }
 }
 
-// * {
-//     margin: 0;
-//     padding: 0;
-// }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box
+}
 
 body {
     font-family: 'Roboto';
     font-weight: 300;
-    margin: 0;
-    padding: 0;
     background: $hero-bg;
 }
 
@@ -37,6 +39,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     text-align: center;
+    padding: .75em;
 
     .navbar-list {
         display: flex;
@@ -66,6 +69,7 @@ body {
         animation: popup .75s;
         font-weight: 500;
         font-size: 9em;
+        margin: .5em;
     }
 
     .subtitle {
@@ -108,6 +112,7 @@ body {
         animation: popup 1s;
         font-weight: 100;
         font-size: 4em;
+        padding: 1em;
     }
 
     .list {
