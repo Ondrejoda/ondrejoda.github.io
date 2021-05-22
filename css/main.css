@@ -92,12 +92,14 @@ body {
 .info {
   text-align: center;
   color: #F3F3F4;
+  width: 66%;
+  margin: auto;
 }
 
 .info .text {
   -webkit-animation: popup .75s;
           animation: popup .75s;
-  font-size: 2.5em;
+  font-size: 2em;
   padding: 4em;
   letter-spacing: .05em;
   line-height: 1.5em;
