@@ -168,10 +168,10 @@ body {
 
 .github .list {
   color: #F3F3F4;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   display: -ms-grid;
   display: grid;
-  grid-column-gap: 1em;
+  grid-column-gap: 1rem;
   -webkit-animation: popup 1s;
           animation: popup 1s;
   list-style-type: none;
@@ -180,13 +180,27 @@ body {
 .github .list .items {
   -webkit-animation: popup 1s;
           animation: popup 1s;
-  font-size: 3em;
-  font-weight: 300;
-  margin-bottom: 2em;
+  margin-bottom: 5rem;
 }
 
-.github .list .items a {
+.github .list .items a .github-card {
+  display: inline-block;
+  background: #000000;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.github .list .items a .github-card .header {
+  font-weight: 500;
+  font-size: 4rem;
   color: #F9B5A2;
+  text-decoration: none;
+}
+
+.github .list .items a .github-card .text {
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #F3F3F4;
   text-decoration: none;
 }
 
@@ -233,6 +247,33 @@ body {
   }
   .itch-io .section-title {
     font-size: 4rem;
+  }
+  .github {
+    margin-bottom: 1rem;
+    grid-column-gap: 1rem;
+  }
+  .github .section-title {
+    font-size: 4rem;
+  }
+  .github .list {
+    margin-bottom: 1rem;
+    grid-column-gap: 1rem;
+    -webkit-animation: popup 1s;
+            animation: popup 1s;
+  }
+  .github .list .items {
+    margin-bottom: 2rem;
+  }
+  .github .list .items a .github-card {
+    padding: .5rem;
+  }
+  .github .list .items a .github-card .header {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  .github .list .items a .github-card .text {
+    font-weight: 300;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
