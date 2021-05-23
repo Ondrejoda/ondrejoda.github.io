@@ -135,6 +135,15 @@ body {
   -webkit-animation: popup 1s;
           animation: popup 1s;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .itch-io .list .items {
@@ -143,6 +152,10 @@ body {
   font-size: 3em;
   font-weight: 300;
   margin-bottom: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 25%;
 }
 
 .itch-io .list .items a {
@@ -186,20 +199,20 @@ body {
 .github .list .items a .github-card {
   display: inline-block;
   background: #000000;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1.5rem;
 }
 
 .github .list .items a .github-card .header {
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #F9B5A2;
   text-decoration: none;
 }
 
 .github .list .items a .github-card .text {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #F3F3F4;
   text-decoration: none;
 }
@@ -221,7 +234,7 @@ body {
 .links .list .items {
   -webkit-animation: popup 1s;
           animation: popup 1s;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 300;
   margin-bottom: 3rem;
 }
@@ -231,12 +244,12 @@ body {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .navbar .navbar-list .navbar-item {
     font-size: 1.5rem;
   }
   .hero .title {
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
   .info {
     width: 80%;
@@ -247,6 +260,9 @@ body {
   }
   .itch-io .section-title {
     font-size: 4rem;
+  }
+  .itch-io .list .items {
+    min-width: 75%;
   }
   .github {
     margin-bottom: 1rem;
@@ -265,15 +281,24 @@ body {
     margin-bottom: 2rem;
   }
   .github .list .items a .github-card {
-    padding: .5rem;
+    padding: .75rem;
   }
   .github .list .items a .github-card .header {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .github .list .items a .github-card .text {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1200px) {
+  .itch-io .section-title {
+    font-size: 4rem;
+  }
+  .itch-io .list .items {
+    min-width: 40%;
   }
 }
 /*# sourceMappingURL=main.css.map */

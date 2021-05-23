@@ -125,11 +125,16 @@ body {
         grid-column-gap: 1em;
         animation: popup 1s;
         list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         .items {
             animation: popup 1s;
             font-size: 3em;
             font-weight: 300;
             margin-bottom: 2em;
+            flex: 1;
+            min-width: 25%;
             a {
                 color: $content-hyperlink;
                 text-decoration: none;
@@ -166,17 +171,17 @@ body {
                 .github-card {
                     display: inline-block;
                     background: $embed-bg;
-                    padding: 1.5rem;
+                    padding: 1rem;
                     border-radius: 1.5rem;
                     .header {
                         font-weight: 500;
-                        font-size: 4rem;
+                        font-size: 3rem;
                         color: $content-hyperlink;
                         text-decoration: none;
                     }
                     .text {
                         font-weight: 300;
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         color: $embed-text;
                         text-decoration: none;
                     }
@@ -197,7 +202,7 @@ body {
         list-style-type: none;
         .items {
             animation: popup 1s;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 300;
             margin-bottom: 3rem;
 
@@ -209,7 +214,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     .navbar {
         .navbar-list {
             .navbar-item {
@@ -219,7 +224,7 @@ body {
     }
     .hero {
         .title {
-            font-size: 4.5rem;
+            font-size: 6rem;
         }
     }
     .info {
@@ -232,6 +237,11 @@ body {
     .itch-io {
         .section-title {
             font-size: 4rem;
+        }
+        .list {
+            .items {
+                min-width: 75%;
+            }
         }
     }
     .github {
@@ -250,18 +260,32 @@ body {
                 margin-bottom: 2rem;
                 a {
                     .github-card {
-                        padding: .5rem;
+                        padding: .75rem;
                         .header {
                             font-weight: 500;
-                            font-size: 3rem;
+                            font-size: 2.5rem;
                         }
                         .text {
                             font-weight: 300;
-                            font-size: 1.5rem;
+                            font-size: 1.25rem;
                         }
                     }
                 }
             }
         }
     }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1200px) {
+    .itch-io {
+        .section-title {
+            font-size: 4rem;
+        }
+        .list {
+            .items {
+                min-width: 40%;
+            }
+        }
+    }
+
 }
