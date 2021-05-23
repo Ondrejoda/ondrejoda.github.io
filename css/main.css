@@ -190,10 +190,6 @@ body {
   text-decoration: none;
 }
 
-.github .list .items .github-card {
-  background: #14110F !important;
-}
-
 .links {
   -webkit-animation: popup 1s;
           animation: popup 1s;
