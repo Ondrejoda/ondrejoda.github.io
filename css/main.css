@@ -248,8 +248,15 @@ body {
   .navbar .navbar-list .navbar-item {
     font-size: 1.5rem;
   }
+  .hero {
+    margin-bottom: 0rem;
+  }
   .hero .title {
     font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+  .hero .subtitle {
+    font-size: 1rem;
   }
   .info {
     width: 80%;
@@ -259,7 +266,7 @@ body {
     line-height: 2.5rem;
   }
   .itch-io .section-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .itch-io .list .items {
     min-width: 100%;
@@ -348,7 +355,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1500px) and (min-width: 1280px) {
+@media only screen and (max-width: 1700px) and (min-width: 1280px) {
   .itch-io .section-title {
     font-size: 4rem;
   }
