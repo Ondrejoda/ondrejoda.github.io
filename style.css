@@ -3,7 +3,7 @@
 :root {
     --fg-primary: #ffffff;
     --fg-secondary: #000000;
-    --bg-primary: #151515;
+    --bg-primary: #050505;
     --bg-secondary: #ffffff;
     --offset: #666666;
     --bg-alert: #8888ff;
@@ -109,7 +109,7 @@ img {
 .hero-card {
     margin: 1rem 1rem 3rem 1rem;
     padding: 0.1rem 3rem 3rem 0;
-    box-shadow: 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px black; */
     /* border-radius: 0.25rem; */
     background: linear-gradient(55deg, black, var(--bg-primary));
     transform: translateY(0) scale(1);
@@ -123,8 +123,7 @@ img {
 .hero-card-title {
     margin: 1rem 1rem 1rem 0;
     padding: 1rem;
-    background: linear-gradient(90deg, var(--bg-card-title), black);
-    box-shadow: 5px 5px 1px black;
+    border-bottom: 3px solid var(--bg-card-title);
     color: var(--fg-primary);
     font-size: 2rem;
     font-weight: 400;
@@ -183,11 +182,11 @@ img {
 .project-card-title {
     margin: 1rem 3rem 1rem 0;
     padding: 1rem;
-    background: linear-gradient(90deg, var(--bg-card-title), black);
+    background: linear-gradient(90deg, var(--bg-card-title), rgba(0, 0, 0, 0));
+    /* box-shadow: 5px 5px 1px black; */
     color: var(--fg-primary);
     font-size: 2rem;
     font-weight: 400;
-    box-shadow: 5px 5px 1px black;
 }
 
 .project-card-content {
@@ -233,14 +232,14 @@ img {
 }
 
 .pc-config-title {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400;
     color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
-    border-bottom: 2px solid var(--offset);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .pc-config-li {
@@ -254,7 +253,7 @@ img {
     color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin: 1rem 2rem 1rem 0;
-    border-bottom: 2px solid var(--offset);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .pc-config-text-title {
@@ -263,7 +262,7 @@ img {
     color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin: 1rem 0 1rem 2rem;
-    border-bottom: 2px solid var(--offset);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .contacts {
