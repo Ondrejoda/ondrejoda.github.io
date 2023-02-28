@@ -123,7 +123,7 @@ img {
 .hero-card-title {
     margin: 1rem 1rem 1rem 0;
     padding: 1rem;
-    background-color: var(--bg-card-title);
+    background: linear-gradient(90deg, var(--bg-card-title), black);
     box-shadow: 5px 5px 1px black;
     color: var(--fg-primary);
     font-size: 2rem;
@@ -156,7 +156,6 @@ img {
 .projects {
     padding-top: 2rem;
     padding-bottom: 1rem;
-    box-shadow: 5px 5px 10px black;
 }
 
 .project-grid {
@@ -184,7 +183,7 @@ img {
 .project-card-title {
     margin: 1rem 3rem 1rem 0;
     padding: 1rem;
-    background-color: var(--bg-card-title);
+    background: linear-gradient(90deg, var(--bg-card-title), black);
     color: var(--fg-primary);
     font-size: 2rem;
     font-weight: 400;
@@ -239,8 +238,14 @@ img {
     color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     border-bottom: 2px solid var(--offset);
+}
+
+.pc-config-li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .pc-config-text {
@@ -248,12 +253,17 @@ img {
     font-weight: 400;
     color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
-    margin: 2rem;
+    margin: 1rem 2rem 1rem 0;
     border-bottom: 2px solid var(--offset);
 }
 
 .pc-config-text-title {
-    margin-right: 10rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--fg-primary);
+    text-shadow: 5px 5px 10px black;
+    margin: 1rem 0 1rem 2rem;
+    border-bottom: 2px solid var(--offset);
 }
 
 .contacts {
@@ -261,8 +271,8 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
-    margin: 3rem;
-    border-radius: 1rem;
+    margin: 3rem 0;
+    /* border-radius: 1rem; */
     box-shadow: 5px 5px 5px black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
