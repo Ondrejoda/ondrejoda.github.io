@@ -1,10 +1,15 @@
 {
-    "A1": "Naprogramuj program, který pomocí while loopu bude iterovat, dokud nenajde náhodné číslo dělitelné 28. Pro generaci náhodného čísla použij tento kód: Math.floor(Math.Random() * 1000)",
-    "A2": "",
-    "A3": "",
-    "A4": "",
-    "B1": "",
-    "B2": "",
-    "B3": "",
-    "B4": ""
+    "A1": [
+        "Naprogramuj while loop, který bude iterovat, dokud najde náhodné sudé číslo. Pro generaci náhodného čísla použij tento kód: Math.floor(Math.Random() * 1000)",
+        "Naprogramuj program, který pomocí while loopu bude iterovat, dokud nenajde náhodné číslo dělitelné 28. Pro generaci náhodného čísla použij tento kód: Math.floor(Math.Random() * 1000)"
+    ],
+    "A2": [
+        "Naprogramuj for loop, který vypíše veškerá čísla od 1 do 100.",
+        "Naprogramuj for loop, který vypíše veškerá sudá čísla od 2000 do 3000.",
+        ""
+    ],
+    "B1": [""],
+    "B2": [""],
+    "B3": [""],
+    "B4": [""]
 }

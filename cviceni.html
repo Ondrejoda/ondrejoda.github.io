@@ -11,9 +11,7 @@
     <div class="main-title hidden"> 
         <h1 class="main-title-text" id="title">Cvičení </h1>
     </div>
-    <div class="content">
-        <code id="code">
-        </code>
+    <div id="content">
     </div>
 
     <div class="button-wrapper">
@@ -21,16 +19,23 @@
     </div>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const excercise = urlParams.get("exercise");
-        const name = urlParams.get("name");
-        console.log(urlParams)
-        console.log(excercise)
-        console.log(name)
+        fetch('data.json').then((response) => response.json()).then((data) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const excercise = urlParams.get("exercise");
+            const name = urlParams.get("name");
+            for (const text of data[excercise]) {
+                let parapara = document.createElement("div");
+                parapara.classList.add("content")
+                let para = document.createElement("code");
+                let node = document.createTextNode(text);
+                para.appendChild(node);
+                parapara.appendChild(para);
+                document.getElementById("content").appendChild(parapara);
+            }
 
-        let data = fetch('data.json').then((response) => response.json()).then((data) => document.getElementById("code").textContent = data[excercise])
-
-        document.getElementById("title").textContent = "Cvičení " + name
+            document.getElementById("title").textContent = "Cvičení " + name
+        })
     </script>
 </body>
 </html>
+

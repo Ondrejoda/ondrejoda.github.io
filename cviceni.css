@@ -30,12 +30,6 @@ img {
     width: 80%;
 }
 
-code {
-    text-align: center;
-    font-family: Consolas,"courier new";
-    color: crimson;
-}
-
 .main-title {
     margin: 2rem;
     color: var(--title-fg);
@@ -79,8 +73,14 @@ code {
 
 .content {
     background-color: #333;
-    margin: 0 10%;
+    margin: 2rem 10%;
     padding: 1rem;
+}
+
+code {
+    text-align: center;
+    font-family: Consolas,"courier new";
+    color: crimson;
 }
 
 .button-wrapper {
