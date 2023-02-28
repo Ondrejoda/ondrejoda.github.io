@@ -13,7 +13,6 @@
     </div>
     <div class="content">
         <code id="code">
-            reghrebebwerbvg
         </code>
     </div>
 
@@ -22,11 +21,16 @@
     </div>
 
     <script>
-        let excercise = window.location.href.split("=")[1]
-        let data = fetch('data.json').then((response) => response.json()).then((json) => console.log(json))
+        const urlParams = new URLSearchParams(window.location.search);
+        const excercise = urlParams.get("exercise");
+        const name = urlParams.get("name");
+        console.log(urlParams)
+        console.log(excercise)
+        console.log(name)
 
-        document.getElementById("title").textContent = "Cvičení " + excercise
-        document.getElementById("code").textContent = data[excercise]
+        let data = fetch('data.json').then((response) => response.json()).then((data) => document.getElementById("code").textContent = data[excercise])
+
+        document.getElementById("title").textContent = "Cvičení " + name
     </script>
 </body>
 </html>

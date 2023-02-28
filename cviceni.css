@@ -83,12 +83,19 @@ code {
     padding: 1rem;
 }
 
+.button-wrapper {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .button {
     text-align: center;
     background: linear-gradient(50deg, var(--accordion-body-button-bg1), var(--accordion-body-button-bg2));
     color: var(--accordion-body-button-fg);
     padding: 1rem;
-    margin: 2rem;
+    margin: 2rem 25%;
     border-radius: 1rem;
     border: none;
     font-weight: 200;

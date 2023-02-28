@@ -1,6 +1,6 @@
 {
-    "A1": "",
-    "A2": "LETS FUCKING GOOOOO",
+    "A1": "Naprogramuj program, který pomocí while loopu bude iterovat, dokud nenajde náhodné číslo dělitelné 28. Pro generaci náhodného čísla použij tento kód: Math.floor(Math.Random() * 1000)",
+    "A2": "",
     "A3": "",
     "A4": "",
     "B1": "",
