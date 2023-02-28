@@ -6,6 +6,10 @@
     --accordion-header-fg: #fff;
     --accordion-header-bg1: #444;
     --accordion-header-bg2: #777;
+    --accordion-body-bg: #333;
+    --accordion-body-button-bg1: #14a;
+    --accordion-body-button-bg2: #d36;
+    --accordion-body-button-fg: #fff;
     --highlight: #f0a;
     --bg: #050507;
 }
@@ -110,10 +114,26 @@ img {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    background-color: var(--accordion-body-bg);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.accordion-item-body-content {
+
+
+.accordion-item-button {
+    background: linear-gradient(50deg, var(--accordion-body-button-bg1), var(--accordion-body-button-bg2));
+    color: var(--accordion-body-button-fg);
     padding: 1rem;
-    line-height: 1.5rem;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    margin: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 200;
+    font-size: 1.5rem;
+    box-shadow: none;
+    transform: scale(1);
+}
+
+.accordion-item-button:hover {
+    box-shadow: 5px 5px 5px black;
+    transform: scale(1.1);
 }
