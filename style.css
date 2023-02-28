@@ -2,6 +2,9 @@
 
 :root {
     --title-fg: #ffffff;
+    --accordion-body-button-fg: #fff;
+    --accordion-body-button-bg1: #14a;
+    --accordion-body-button-bg2: #d36;
     --title-sub-fg: #555555;
     --hero-card-fg: #ffffff;
     --hero-card-bg1: #000000;
@@ -36,9 +39,27 @@ img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("img/bg1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 2rem;
     padding-bottom: 1rem;
     box-shadow: 5px 5px 10px black;
+}
+
+.vycvik-button {
+    text-align: center;
+    background: linear-gradient(50deg, var(--accordion-body-button-bg1), var(--accordion-body-button-bg2));
+    color: var(--accordion-body-button-fg);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 200;
+    font-size: 1.5rem;
+    box-shadow: none;
+    transform: scale(1);
+}
+
+.vycvik-button:hover {
+    box-shadow: 5px 5px 5px black;
+    transform: scale(1.1);
 }
 
 .main-title {
