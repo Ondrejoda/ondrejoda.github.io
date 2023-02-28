@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500&display=swap');
 
 :root {
-    --fg-primary: #ffffff;
-    --fg-secondary: #000000;
-    --bg-primary: #050505;
-    --bg-secondary: #ffffff;
-    --offset: #666666;
-    --bg-alert: #8888ff;
-    --fg-alert: #ffffff;
-    --fg-border: #0000ff;
-    --bg-card-title: #8d005e;
+    --title-fg: #ffffff;
+    --title-sub-fg: #555555;
+    --hero-card-fg: #ffffff;
+    --hero-card-bg1: #000000;
+    --hero-card-bg2: #080810;
+    --project-card-fg: #ffffff;
+    --project-card-bg1: #151515;
+    --project-card-bg2: #222233;
+    --pc-config-bg1: #151515;
+    --pc-config-bg2: #252530;
+    --pc-config-fg: #ffffff;
+    --highlight: #ff00aa;
+    --bg: #050507;
 }
 
 * {
@@ -21,7 +25,7 @@
 body {
     font-family: 'Roboto';
     font-weight: 300;
-    background-color: var(--bg-primary);
+    background-color: var(--bg);
 }
 
 img {
@@ -37,27 +41,15 @@ img {
     box-shadow: 5px 5px 10px black;
 }
 
-.navbar {
-    background-color: var(--bg-secondary);
-    margin-bottom: 3rem;
-}
-
-.navbar-title {
-    margin-left: 0.5rem;
-    padding: 0.5rem 0rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
 .main-title {
     margin: 10rem 2rem 2rem;
+    color: var(--title-fg);
 }
 
 .main-title-text {
     text-align: center;
     font-size: 7rem;
     font-weight: 200;
-    color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
 }
 
@@ -68,7 +60,7 @@ img {
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: .5rem;
-    color: var(--offset);
+    color: var(--title-sub-fg);
 }
 
 .main-title-description {
@@ -85,19 +77,9 @@ img {
     text-align: center;
     font-size: 4rem;
     font-weight: 400;
-    color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin-top: 2rem;
-}
-
-.title-subtext {
-    margin-top: 0.5rem;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: var(--offset);
+    color: var(--title-fg);
 }
 
 .hero {
@@ -109,9 +91,8 @@ img {
 .hero-card {
     margin: 1rem 1rem 3rem 1rem;
     padding: 0.1rem 3rem 3rem 0;
-    /* box-shadow: 5px 5px 5px black; */
-    /* border-radius: 0.25rem; */
-    background: linear-gradient(55deg, black, var(--bg-primary));
+    background: linear-gradient(55deg, var(--hero-card-bg1), var(--hero-card-bg2));
+    color: var(--hero-card-fg);
     transform: translateY(0) scale(1);
 }
 
@@ -123,7 +104,7 @@ img {
 .hero-card-title {
     margin: 1rem 1rem 1rem 0;
     padding: 1rem;
-    border-bottom: 3px solid var(--bg-card-title);
+    border-bottom: 3px solid var(--highlight);
     color: var(--fg-primary);
     font-size: 2rem;
     font-weight: 400;
@@ -166,7 +147,7 @@ img {
 .project-card {
     margin: 1rem 1rem 3rem 1rem;
     box-shadow: 5px 5px 5px black;
-    background: linear-gradient(55deg, black, var(--bg-primary));
+    background: linear-gradient(55deg, var(--project-card-bg1), var(--project-card-bg2));
     transform: translateY(0) scale(1);
 }
 
@@ -182,9 +163,8 @@ img {
 .project-card-title {
     margin: 1rem 3rem 1rem 0;
     padding: 1rem;
-    background: linear-gradient(90deg, var(--bg-card-title), rgba(0, 0, 0, 0));
-    /* box-shadow: 5px 5px 1px black; */
-    color: var(--fg-primary);
+    background: linear-gradient(90deg, var(--highlight), rgba(0, 0, 0, 0));
+    color: var(--project-card-fg);
     font-size: 2rem;
     font-weight: 400;
 }
@@ -192,7 +172,7 @@ img {
 .project-card-content {
     margin: 2rem 2rem 6rem 0.5rem;
     font-size: 1.35rem;
-    color: var(--fg-primary);
+    color: var(--project-card-fg);
     line-height: 1.75rem;
 }
 
@@ -203,7 +183,8 @@ img {
     margin: 0rem 0rem 1rem 1rem;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: var(--fg-border);
+    background-color: var(--highlight);
+    color: var(--project-card-fg);
     border: none;
     box-shadow: none;
     transform: scale(1);
@@ -222,19 +203,19 @@ img {
 
 
 .pc-config {
-    background: linear-gradient(55deg, black, var(--bg-card-title));
+    background: linear-gradient(55deg, var(--pc-config-bg1), var(--pc-config-bg2));
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
     margin: 3rem;
     border-radius: 1rem;
+    color: var(--pc-config-fg);
     box-shadow: 5px 5px 5px black;
 }
 
 .pc-config-title {
     font-size: 2.5rem;
     font-weight: 400;
-    color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -250,7 +231,6 @@ img {
 .pc-config-text {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin: 1rem 2rem 1rem 0;
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
@@ -259,36 +239,9 @@ img {
 .pc-config-text-title {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--fg-primary);
     text-shadow: 5px 5px 10px black;
     margin: 1rem 0 1rem 2rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
-}
-
-.contacts {
-    background: linear-gradient(30deg, var(--bg-card-title), black);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 2rem;
-    margin: 3rem 0;
-    /* border-radius: 1rem; */
-    box-shadow: 5px 5px 5px black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.contacts-text {
-    font-size: 1rem;
-    font-weight: 200;
-    color: var(--fg-primary);
-    margin: 2rem;
-    text-shadow: 5px 5px 10px black;
-}
-
-.contacts-text-a {
-    font-size: 1rem;
-    font-weight: 200;
-    color: var(--bg-card-title);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -311,9 +264,6 @@ img {
         grid-template-columns: 1fr;
     }
     .project-grid {
-        grid-template-columns: 1fr;
-    }
-    .contacts {
         grid-template-columns: 1fr;
     }
 }
