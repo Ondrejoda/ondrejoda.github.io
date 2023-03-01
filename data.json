@@ -6,10 +6,20 @@
     "A2": [
         "Naprogramuj for loop, který vypíše veškerá čísla od 1 do 100.",
         "Naprogramuj for loop, který vypíše veškerá sudá čísla od 2000 do 3000.",
-        ""
+        "Naprogramuj for loop, který stokrát přičte náhodné číslo od 1 do 1000 a poté to číslo vypíše. Pro generaci náhodného čísla použij tento kód: Math.floor(Math.Random() * 1000)"
     ],
-    "B1": [""],
-    "B2": [""],
-    "B3": [""],
-    "B4": [""]
+    "A3": [
+        "Naprogramuj for of loop, který projde polem s čísly a vypíše veškerá čísla, které jsou větší než 50. Zde je pole čísel: [1, 43, 76, 23, 81, 72, 22, 18]",
+        "Naprogramuj for of loop, který projde stringem a vypíše 'nalezeno!' když najde buď písmeno b, g, nebo r. String se převádí do pole buď pomocí spread operátoru ([...stringName]), nebo pomocí Array.from(stringName). Zde je string písmen: 'qhgneoahlwysikyup'"
+    ],
+    "B1": [
+        "Naprogramuj funkci, která řekne, jestli zadané číslo je dělitelné 2, 3 nebo 5. Funkce by měla vrátit boolean.",
+        "Naprogramuj program, kde pomocí modula vypíše poslední číslici daného čísla. Číslo může být libovolné."
+    ],
+    "B2": [
+        "Naprogramuj program, který projde stringem a vypíše každé třetí písmeno. String se převádí do pole buď pomocí spread operátoru ([...stringName]), nebo pomocí Array.from(stringName). Doporučuji použít for each loop. Zde je string písmen: 'qhgneoahlwysikyup'"
+    ],
+    "B3": [
+        "Převeď 7502822 sekund do sekund, minut, hodin a dnů pomocí modula."
+    ]
 }
