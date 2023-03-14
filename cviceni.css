@@ -10,6 +10,8 @@
     --accordion-body-button-bg1: #14a;
     --accordion-body-button-bg2: #d36;
     --accordion-body-button-fg: #fff;
+    --code-fg: #f2f;
+    --code-outline: #828;
     --highlight: #f0a;
     --bg: #050507;
 }
@@ -71,16 +73,24 @@ img {
     color: var(--title-fg);
 }
 
+.content-wrapper {
+    margin: 2rem 10%;
+    background-color: #222;
+    padding: 1rem 0;
+    border-radius: 2rem;
+}
+
 .content {
     background-color: #333;
-    margin: 2rem 10%;
-    padding: 1rem;
+    margin: 2rem 0;
+    padding: 2rem;
 }
 
 code {
     text-align: center;
     font-family: Consolas,"courier new";
-    color: crimson;
+    color: var(--code-fg);
+    border-bottom: 1px solid var(--code-outline);
 }
 
 .button-wrapper {

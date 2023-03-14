@@ -2,6 +2,7 @@
 
 :root {
     --title-fg: #ffffff;
+    --title-fg-transparent: #ffffff88;
     --accordion-body-button-fg: #fff;
     --accordion-body-button-bg1: #14a;
     --accordion-body-button-bg2: #d36;
@@ -16,6 +17,7 @@
     --pc-config-bg2: #252530;
     --pc-config-fg: #ffffff;
     --highlight: #ff00aa;
+    --highlight-transparent: #ff00aa80;
     --bg: #050507;
 }
 
@@ -35,11 +37,29 @@ img {
     width: 80%;
 }
 
+.nav {
+    margin: 0 4rem;
+    color: var(--bg);
+    border-bottom: 1px solid var(--highlight-transparent);
+}
+
+.nav-a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: var(--title-fg);
+}
+
+.nav-a:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
 .top-segment {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("img/bg1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     box-shadow: 5px 5px 10px black;
 }
 
@@ -47,8 +67,8 @@ img {
     text-align: center;
     background: linear-gradient(50deg, var(--accordion-body-button-bg1), var(--accordion-body-button-bg2));
     color: var(--accordion-body-button-fg);
-    padding: 1rem;
-    margin: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
     border-radius: 1rem;
     border: none;
     font-weight: 200;
