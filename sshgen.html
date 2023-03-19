@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSH Gen</title>
+</head>
+<body>
+    <p id="main">your life is worth NOTHING</p>
+    <script>
+        async function getEndpoints() {
+            let response = await fetch('https://api.ngrok.com/endpoints', {headers: {'Authorization': 'Bearer 2N9OGzwrDGzavnh0k0ZG1lNDsKQ_2mTp2tH5aosf7DnAgfnng', 'Ngrok-Version': '2'}})
+            return response.json()
+        }
+
+        function processEndpoint(endpoint) {
+            let data = endpoint.public_url.split("tcp://")[1].split(":")
+            let string = `ssh ondrejoda@${data[0]} -p ${data[1]}`
+            document.getElementById("main").innerText = string
+        }
+        
+        let data = getEndpoints().then((endpoints) => {processEndpoint(endpoints["endpoints"][0])})
+    </script>
+</body>
+</html>
