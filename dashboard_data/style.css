@@ -1,0 +1,78 @@
+:root {
+    --bg-main: #000005;
+    --bg-shedule: #111121;
+    --bg-item: #000000;
+    --bg-item-pause: #060611;
+}
+
+body {
+    background-color: #000005;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    gap: 2rem;
+    margin: 1rem;
+    align-items: start;
+}
+
+.schedule {
+    align-items: center;
+    background-color: #111121;
+    border-radius: 1rem;
+}
+
+.schedule__title {
+    text-align: center;
+    color: #ffffff;
+}
+
+.schedule__items {
+    display: grid;
+    align-items: stretch;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+.schedule__items--trams {
+    grid-template-columns: 1fr 1fr;
+}
+
+.schedule__item {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 0.5rem;
+}
+
+.schedule__item--pause {
+    color: #aaaaaa;
+    background-color: #060611;
+}
+
+.schedule__item > p {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.schedule__item--pause > p {
+    margin: 0.5rem;
+}
+
+.schedule__item--tram > p {
+    margin: 0.5rem;
+}
+
+@media (min-width: 832px) {
+    .main {
+        grid-template-columns: 0.25fr 1.5fr 1fr 0.25fr;
+    }
+
+    .schedule--today {
+        grid-column: 2;
+    }
+}
