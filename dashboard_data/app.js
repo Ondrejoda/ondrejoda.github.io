@@ -110,3 +110,7 @@ window.addEventListener("load", (event) => {
         element.appendChild(main);
     }
 });
+
+window.setTimeout( function() {
+    window.location.reload();
+  }, 30000);
