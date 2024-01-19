@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
-    --bg-main: #000005;
-    --bg-shedule: #111121;
-    --bg-item: #000000;
-    --bg-item-pause: #060611;
+    --bg-main: #090809;
+    --bg-schedule: #8f0000;
+    --bg-item: #f44e3f;
+    --bg-item-pause: #ee8478;
+    --fg-title: #ffffff;
+    --fg-schedule: #ffffff;
+    --fg-item: #ffffff;
+    --fg-item-pause: #ffffff;
 }
 
 body {
-    background-color: #000005;
+    background-color: var(--bg-main);
+    font-family: 'Roboto', sans-serif;
 }
 
 .title {
-    color: #ffffff;
+    color: var(--fg-title);
     text-align: center;
 }
 
@@ -23,13 +30,13 @@ body {
 
 .schedule {
     align-items: center;
-    background-color: #111121;
+    background-color: var(--bg-schedule);
     border-radius: 1rem;
 }
 
 .schedule__title {
     text-align: center;
-    color: #ffffff;
+    color: var(--fg-schedule);
 }
 
 .schedule__items {
@@ -44,14 +51,14 @@ body {
 }
 
 .schedule__item {
-    color: #ffffff;
-    background-color: #000000;
+    color: var(--fg-item);
+    background-color: var(--bg-item);
     border-radius: 0.5rem;
 }
 
 .schedule__item--pause {
-    color: #aaaaaa;
-    background-color: #060611;
+    color: var(--fg-item-pause);
+    background-color: var(--bg-item-pause);
 }
 
 .schedule__item > p {

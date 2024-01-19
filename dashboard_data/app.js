@@ -36,7 +36,6 @@ window.addEventListener("load", (event) => {
     let dayArray = week[dayIndex];
 
     let time = date.getHours() * 60 + date.getMinutes()
-    // let time = 10 * 60 + 32
 
     let empty = true;
 
@@ -56,7 +55,15 @@ window.addEventListener("load", (event) => {
             const para = document.createElement("p");
             let futureTime = dayArray[parseInt(key) + 1];
             let futureTimeArr = futureTime.start.split(":");
-            let node = document.createTextNode(hour.name + " : " + timeArr[0] + ":" + timeArr[1] + " - " + futureTimeArr[0] + ":" + futureTimeArr[1]);
+            let etaTime = (timeArr[0] * 60 + parseInt(timeArr[1])) - time;
+            let etaMinutes = etaTime % 60;
+            let etaHours = (etaTime - etaMinutes) / 60;
+            let etaText = "";
+            if (etaHours > 0) {
+                etaText += etaHours + " hrs ";
+            }
+            etaText += etaMinutes + " mins";
+            let node = document.createTextNode(hour.name + " : " + timeArr[0] + ":" + timeArr[1] + " - " + futureTimeArr[0] + ":" + futureTimeArr[1] + " (in " + etaText + ")");
             para.appendChild(node);
             main.appendChild(para);
 
